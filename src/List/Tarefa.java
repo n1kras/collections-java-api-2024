@@ -1,3 +1,5 @@
+package List;
+
 public class Tarefa {
     private String descricao;
     public Tarefa(String descricao) {
@@ -6,5 +8,12 @@ public class Tarefa {
 
     public String getDescricao() {
         return descricao;
+    }
+
+    @Override
+    public String toString() {
+        return "List.Tarefa{" +
+                "descricao='" + descricao + '\'' +
+                '}';
     }
 }
