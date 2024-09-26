@@ -1,6 +1,5 @@
-package List;
+package List.Pesquisa;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 

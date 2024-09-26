@@ -1,4 +1,4 @@
-package List;
+package List.OperacoesBasicas;
 
 public class Tarefa {
     private String descricao;
@@ -12,7 +12,7 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return "List.Tarefa{" +
+        return "List.OperacoesBasicas.Tarefa{" +
                 "descricao='" + descricao + '\'' +
                 '}';
     }
