@@ -26,4 +26,20 @@ public class OrdenacaoPessoas {
         Collections.sort(pessoasPorAltura, new ComparatorPorAltura());
         return pessoasPorAltura;
     }
+
+    public static void main(String[] args) {
+        OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
+        ordenacaoPessoas.adicionarPessoa("Nome 1", 20, 1.56);
+        ordenacaoPessoas.adicionarPessoa("Nome 2", 30, 1.80);
+        ordenacaoPessoas.adicionarPessoa("Nome 3", 25, 1.70);
+        ordenacaoPessoas.adicionarPessoa("Nome 4", 17, 1.56);
+
+        System.out.println(ordenacaoPessoas.pessoaList); // na ordem em que os elementos foram inseridos
+        System.out.println(ordenacaoPessoas.ordenarPorIdade()); // ordenado por idade
+        System.out.println(ordenacaoPessoas.ordenarPorAltura()); // ordenado por altura
+
+        //nenhuma ordenacao é definitiva, pois como pode ser visto nos metodos,
+        // é instanciada uma copia da lista original, e retornada com a ordenacao nova.
+        // no entanto, a lista original permanece na ordem que foi feita
+    }
 }
